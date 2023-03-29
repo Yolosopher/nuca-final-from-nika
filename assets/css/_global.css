@@ -1,0 +1,17 @@
+html {
+	font-family: 'Inter', sans-serif;
+	/* font-family: 'Rubik', sans-serif; */
+}
+
+.container-small {
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.container-large {
+	max-width: 1480px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}

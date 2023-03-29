@@ -1,0 +1,17 @@
+/* general */
+@import url('./_font.css');
+@import url('./_reset.css');
+@import url('./_vars.css');
+@import url('./_global.css');
+
+/* layout */
+@import url('./layout/_header.css');
+@import url('./layout/_footer.css');
+
+
+/* home */
+
+.main {
+	min-height: 150vh;
+	background-color: darkgreen;
+}
