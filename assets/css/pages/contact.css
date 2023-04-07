@@ -8,11 +8,13 @@
   color: white;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 .artcle_div {
-  width: 500px;
+  max-width: 500px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
   height: 400px;
-  padding-top: 283px;
   background: rgba(64, 33, 1, 0.73);
   border: 1px solid #ffffff;
   box-shadow: -1px -1px 4px #ffffff;
@@ -123,4 +125,8 @@ iframe {
     left: 375px;
     top: 88px;
   }
+  .artcle_div {
+    margin-left: 240px;
+  }
 }
+
