@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&display=swap'); */
+
+html,
+body {
+	/* font-family: 'Noto Sans Georgian', sans-serif !important; */
+	/* font-variant: all-small-caps; */
+	/* text-transform: uppercase; */
+	/* font-family: 'Titillium Web', sans-serif; */
+}
+
+.workshop_main {
+}
+
+.element {
+	padding: 0 40px;
+	border: 10px red solid;
+	background: #a1a52a;
+	height: 200px;
+}
+
+.parent {
+	background: gray;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.child {
+	font-size: 2rem;
+	width: 50px;
+	height: 50px;
+	order: 0;
+}
+
+.child:nth-child(1) {
+}
+.child:nth-child(2) {
+}
+.child:nth-child(3) {
+}
+
+div div div {
+	text-align: center;
+}
+
+main div div {
+	text-align: left;
+}
+
+/* flex-basis:*/
+/* flex-grow:*/
+/* flex-shrink: */
+/* flex: */

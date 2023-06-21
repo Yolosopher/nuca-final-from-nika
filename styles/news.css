@@ -1,0 +1,42 @@
+.news_main {
+	/* border: 4px solid red; */
+}
+
+.news_main div {
+	/* height: 40px; */
+	background-color: red;
+	font-size: 25px;
+	padding: 40px 20px;
+	border: 5px solid pink;
+	border-radius: 12px;
+	display: inline-block;
+	text-transform: lowercase;
+}
+
+.news_main .one {
+	background-color: blue;
+	color: white;
+}
+.news_main .two {
+}
+.news_main .three {
+}
+
+
+/* display: block;
+	1. შეგვიძლია width-ისა და height-ისის მინიჭება ელემენტისთვის
+	2. აუცილებლად მთლიან ჰორიზონტალურ ხაზსს იკავებენ. row
+*/
+
+/* display: inline;
+	1. არ მოქმედებს/მუშაობს დაწერილი width და height
+	2. არ მუშაობს ზემოთა და ქვემოთა margin-ები
+	3. ჩვეულებრივ მუშაობს border და padding
+	4. არის ერთ ხაზზე თუკი ეტევა, display:block-ისგან განსხავვებით
+*/
+
+/* display: inline-block;
+	1. შეგვიძლია width-ისა და height-ისის მინიჭება ელემენტისთვის;
+	2. არის ერთ ხაზზე თუკი ეტევა, display:block-ისგან განსხავვებით;
+	3. ჩვეულებრივ მუშაობს ზემოთა და ქვემოთა margin-ები
+*/

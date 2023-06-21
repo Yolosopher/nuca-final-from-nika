@@ -1,0 +1,153 @@
+@font-face {
+	font-family: 'nino';
+	src: url('../fonts/bpg_nino_mtavruli_normal.otf');
+}
+@font-face {
+	font-family: 'noto';
+	src: url('../fonts/noto.ttf');
+}
+html {
+	font-family: 'noto';
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	padding: 0 48px;
+}
+
+header {
+	padding-top: 38px;
+	margin-bottom: 28px;
+}
+
+.logo {
+	font-size: 0;
+	display: inline-block;
+	margin-bottom: 49px;
+}
+nav li:nth-child(odd) a {
+	color: green;
+}
+nav li:not(:last-child) {
+	display: block;
+	margin-bottom: 28px;
+}
+nav a {
+	/* font-family: 'BPG Nino Mtavruli'; */
+	/* font-style: italic; */
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	color: #2615e8;
+}
+nav a.active {
+	color: #ee4036;
+}
+
+.contact_main {
+	padding-top: 80px;
+}
+.contact_info {
+	width: 100%;
+	max-width: 406px;
+	margin: 0 auto;
+	padding: 9px 6px;
+	border: 4px solid #f31010;
+	text-align: center;
+}
+
+.contact_info h1 {
+	font-weight: 400;
+	font-size: 32px;
+	color: #2615e8;
+	margin-bottom: 12px;
+}
+.contact_info div {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	color: black;
+}
+
+.contact_info span {
+	color: #646468;
+}
+address {
+	font-style: normal;
+	display: inline;
+}
+
+main {
+	padding: 0 3px;
+}
+
+.home_main img {
+	display: block;
+	font-size: 0;
+	width: 100%;
+	object-fit: contain;
+	margin-bottom: 69px; 
+}
+
+.home_main h1 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+
+	color: #29f408;
+}
+
+
+.burger {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	display: none;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.burger-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	padding: 20px;
+	padding-top: 70px;
+	width: 200px;
+	background: rgb(189, 188, 188);
+	color: black	;
+	height: 100vh;
+	transform: translateX(100%);
+	transition: all .3s ease-in-out;
+}
+
+.burger-menu.shown {
+	transform: translateX(0%);
+
+}
+@media screen and (max-width: 768px) {
+	.burger, .burger-menu {
+		display: flex;
+	}
+}
+
+.burger svg {
+	width: 24px;
+}
