@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
-		<header>
+		<header class="header container">
 			<a href="index.html" class="logo">
 				<img src="img/ford.png" alt="" />
 			</a>
@@ -18,13 +18,7 @@
 						<a href="index.html" class="active">მთავარი</a>
 					</li>
 					<li>
-						<a href="news.html">სიახლეები</a>
-					</li>
-					<li>
-						<a href="contact.html">კონტაქტი</a>
-					</li>
-					<li>
-						<a href="workshop6.html">დავალება 6</a>
+						<a href="products.html">პროდუქტები</a>
 					</li>
 				</ul>
 			</nav>
@@ -47,53 +41,67 @@
 						<a href="index.html" class="active">მთავარი</a>
 					</li>
 					<li>
-						<a href="news.html">სიახლეები</a>
-					</li>
-					<li>
-						<a href="contact.html">კონტაქტი</a>
-					</li>
-					<li>
-						<a href="workshop6.html">დავალება 6</a>
+						<a href="products.html">პროდუქტები</a>
 					</li>
 				</ul>
 			</div>
 		</header>
-		<h1></h1>
-		<main class="home_main">
-			<img src="img/main.png" alt="" class="main_image" />
-			<h1 class="main-heading">
-				1959 წელს დაარსდა Ford Motor Credit Company.
-			</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Distinctio, tempore. Ratione numquam minima soluta, eveniet nam
-				rerum unde, expedita dicta quis adipisci et veritatis dolorum
-				perferendis ipsum? Voluptates asperiores eligendi ex? Eos,
-				voluptas cum? Cum ducimus dolore eligendi, repellat ipsam
-				provident fuga, vero cupiditate natus vitae, qui doloremque
-				recusandae! Inventore ratione blanditiis optio obcaecati,
-				dignissimos sunt delectus sed earum praesentium nesciunt vitae
-				culpa quidem! Ab cum veniam fugiat nam iste itaque nostrum,
-				doloribus et doloremque sequi dolorem distinctio reprehenderit
-				sed dicta totam, voluptatem culpa necessitatibus a impedit
-				aperiam soluta corrupti tempora! Repellat, at quaerat ipsam
-				rerum saepe nihil explicabo quasi placeat fuga voluptatibus,
-				illo molestiae. Pariatur porro dolorem voluptates, aliquid omnis
-				rem blanditiis fugit, quaerat modi id accusamus! Architecto ipsa
-				ducimus nihil qui quia eius vel alias delectus quod nemo ea illo
-				recusandae tenetur quaerat, aspernatur facere dicta libero
-				accusamus sed voluptates odio doloribus animi. Molestias
-				recusandae adipisci reprehenderit eaque distinctio quasi
-				voluptatem magni perferendis ipsa debitis repellendus
-				exercitationem dolor sapiente dicta minima a corrupti laborum,
-				voluptates sed? Nulla voluptates rem animi quasi similique, enim
-				minus labore consequuntur nostrum ea itaque dolore delectus et
-				ipsum distinctio, alias, corporis praesentium tempore possimus.
-				Aliquid at distinctio commodi atque, deleniti quod ipsum saepe.
-			</p>
+		<main class="main home_main container">
+			<div class="swiper hero_slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/wallpapers/1.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/wallpapers/2.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/wallpapers/3.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/wallpapers/4.jpg" alt="" />
+					</div>
+				</div>
+			</div>
 		</main>
-
-		<script src="sum.js"></script>
-		<!-- <script defer src="index.js"></script> -->
+		<section class="popular_questions container">
+			<h2>პოპულარული კითხვები</h2>
+			<div class="questions">
+				<div class="question">
+					<h3>როგორ შევძლოთ მანქანის გარბენა?</h3>
+					<div class="answer">
+						<p>
+							მანქანის გარბენა შეგიძლიათ ჩვენს სერვის ცენტრში ან
+							მივიღოთ მანქანა თქვენს მიერ მისამართზე.
+						</p>
+					</div>
+				</div>
+				<div class="question">
+					<h3>როგორ შევძლოთ მანქანის გარბენა?</h3>
+					<div class="answer">
+						<p>
+							მანქანის გარბენა შეგიძლიათ ჩვენს სერვის ცენტრში ან
+							მივიღოთ
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="cookie-popup popup">
+			<div class="popup-content">
+				<h3>ჩვენი ვებ-გვერდი იყენებს ქუქის</h3>
+				<p>
+					ჩვენი ვებ-გვერდი იყენებს ქუქის ფაილებს და სხვა პირობებს რათა
+					გაუგზავნოთ თქვენს მოწყობილობაზე საუკეთესო შეთავაზება. თუ
+					თქვენ გსურთ გაგრძელება, გადადით ჩვენი ვებ-გვერდზე და
+					დააჭირეთ „ვეთანხმები“ ღილაკს.
+				</p>
+				<div class="btns">
+					<button id="agree" class="btn">ვეთანხმები</button>
+					<button id="disagree" class="btn">არ ვეთანხმები</button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js" type="module"></script>
 	</body>
 </html>
