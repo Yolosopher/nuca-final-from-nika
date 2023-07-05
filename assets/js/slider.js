@@ -8,6 +8,7 @@ const swiper = new Swiper('.category_slider', {
 	slidesPerView: 2,
 	autoplay: {
 		delay: 3000,
+		disableOnInteraction: false,
 	},
 	speed: 700,
 	loop: true,
