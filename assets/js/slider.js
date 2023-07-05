@@ -5,10 +5,18 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper('.category_slider', {
 	spaceBetween: 30,
-	slidesPerView: 4,
+	slidesPerView: 2,
 	autoplay: {
 		delay: 3000,
 	},
 	speed: 700,
-	loop: true
+	loop: true,
+	breakpoints: {
+		480: {
+			slidesPerView: 3,
+		},
+		600: {
+			slidesPerView: 4,
+		}
+	}
 });

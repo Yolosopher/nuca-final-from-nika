@@ -9,6 +9,6 @@ if (foundProductMain) {
 	require('./js-components/insertProducts.js');
 } else if (foundHomeMain) {
 	// if on home page
-	require('./js-components/slider.js');
+	require('./assets/js/slider.js');
 	require('./js-components/accordion.js');
 }
