@@ -3,6 +3,10 @@ html {
   /* font-family: 'Rubik', sans-serif; */
   color: #ffffff;
 }
+html, body {
+  
+  scroll-behavior: smooth;
+}
 
 .container-small {
   max-width: 1230px;
