@@ -48,16 +48,17 @@ h1 {
 }
 /* article_2 */
 
-.article_2 {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: space-between;
+.slider_container {
   padding: 64px 57px;
-  grid-gap: 40px 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.slider_container .swiper-slide {
+  /* height: 96px; */
 }
 figure img {
   border-radius: 70px;
-  width: 130px;
+  width: 100%;
   height: 96px;
   object-fit: cover;
 }
@@ -70,6 +71,7 @@ figcaption {
   text-align: center;
   color: #b53b1b;
   margin-top: 24px;
+  text-align: center;
 }
 /* article_2 end */
 

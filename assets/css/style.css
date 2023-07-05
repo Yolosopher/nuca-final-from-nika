@@ -147,6 +147,43 @@ header .links a {
 header .links i {
 	font-size: 21px;
 }
+
+.cookies{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: rgb(231, 222, 222);
+	z-index: 10;
+	color: #402101;
+	display: block;
+}
+
+.cookies.hidden{
+	display: none;
+}
+
+.cookies_container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.cookies_text{
+	max-width: 500px;
+	text-align: center;
+}
+
+.cookies_btn{
+	background-color: #402101;
+	color: white;
+	padding: 10px;
+	border-radius: 10px ;
+	cursor: pointer;
+}
+
 @media screen and (min-width: 1025px) {
 	/* nav */
 	nav ul {
@@ -278,3 +315,4 @@ header .links i {
 		align-items: flex-end;
 	}
 }
+

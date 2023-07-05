@@ -1,5 +1,5 @@
 require('./assets/js/burger.js');
-require('./js-components/cookie-popup.js');
+require('./assets/js/cookie-popup.js');
 
 const foundProductMain = document.querySelector('.products_main');
 const foundHomeMain = document.querySelector('.home_main');

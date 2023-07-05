@@ -3,9 +3,9 @@ import Swiper from 'swiper/bundle';
 // import styles bundle
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.hero_slider', {
+const swiper = new Swiper('.category_slider', {
 	spaceBetween: 30,
-	slidesPerView: 1,
+	slidesPerView: 4,
 	autoplay: {
 		delay: 3000,
 	},
