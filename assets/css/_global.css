@@ -1,0 +1,40 @@
+html {
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  color: #ffffff;
+}
+
+.container-small {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-large {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.shop_btn {
+  border: 2px solid rgba(216, 80, 30, 0.777);
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .hide_on_mob {
+    display: none !important;
+  }
+}
