@@ -51,14 +51,82 @@
 			<article class="main_article">
 				<div class="artcle_div">
 					<h2>Get in Touch</h2>
-					<form>
-						<input
-							type="text"
-							id="fullname"
-							placeholder="Full Name" />
-						<input type="email" id="mail" placeholder="Email" />
-						<input type="text" id="sms" placeholder="Message" />
-
+					<form id="contact-form">
+						<div class="form-control">
+							<div class="form-control-message"></div>
+							<input
+								type="text"
+								id="fullname"
+								name="fullname"
+								placeholder="Full Name" />
+						</div>
+						<div class="form-control">
+							<div class="form-control-message"></div>
+							<input
+								type="text"
+								id="email"
+								name="email"
+								placeholder="Email" />
+						</div>
+						<div class="form-control form-control-password">
+							<div class="form-control-message"></div>
+							<input
+								type="password"
+								id="password"
+								name="password"
+								placeholder="Password" />
+							<i
+								class="fa-regular fa-eye"
+								id="password-show-btn"></i>
+						</div>
+						<div class="form-control form-control-radio">
+							<div class="label-name">Your Age:</div>
+							<div class="form-control-radio-inputs">
+								<label class="radio-label">
+									<input
+										checked
+										type="radio"
+										name="age"
+										value="<18"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>&lt;18</span>
+								</label>
+								<label class="radio-label">
+									<input
+										type="radio"
+										name="age"
+										value="19-30"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>19-30</span>
+								</label>
+								<label class="radio-label">
+									<input
+										type="radio"
+										name="age"
+										value=">31"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>&gt;31</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-control form-control-textarea">
+							<div class="form-control-message"></div>
+							<textarea
+								name="message"
+								id="sms"
+								placeholder="Message"></textarea>
+						</div>
+						<label class="agree-terms form-control">
+							<div class="form-control-message"></div>
+							<input type="checkbox" name="terms" checked="" />
+							<div class="custom-checkbox">
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<span>I agree to the terms and conditions</span>
+						</label>
 						<button type="submit">SUBMIT</button>
 					</form>
 				</div>
@@ -159,5 +227,6 @@
 
 		<!-- scripts -->
 		<script type="module" src="index.js"></script>
+		<script type="module" src="contact.js"></script>
 	</body>
 </html>
