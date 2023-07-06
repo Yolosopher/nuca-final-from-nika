@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Earthly Artisry</title>
+		<script
+			src="https://kit.fontawesome.com/eeeffffef7.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/pages/artwork.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="header_content container-large">
+				<nav>
+					<button type="button" class="burger">
+						<i class="fa-solid fa-bars ok"></i>
+						<i class="fa-sharp fa-solid fa-xmark x"></i>
+					</button>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="artwork.html" class="active">Artwork</a>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<a class="logo" href="index.html">
+					<picture>
+						<source
+							media="(min-width:1025px)"
+							srcset="assets/img/logo.svg" />
+						<img src="assets/img/logo-mob.svg" alt="logo" />
+					</picture>
+				</a>
+				<div class="links">
+					<a href="login.html">Sign In</a>
+					<a href="basket.html">
+						<i class="fa-sharp fa-solid fa-cart-shopping"></i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+		<main class="main artwork_main">
+			<article class="main_article">
+				<div class="artcle_div">
+					<h2>Earth, Water, Air and Fire</h2>
+					<button type="button" class="shop_btn">Shop Now</button>
+				</div>
+			</article>
+			<!-- search section -->
+			<section class="seaction_search">
+				<div class="search_div">
+					<div class="search">
+						<span class="shop">Shop By Category</span>
+						<i class="fa-sharp fa-light fa-square-chevron-down"></i>
+					</div>
+					<form id="search-form">
+						<input
+							name="search"
+							type="text"
+							placeholder="Search For Anything" />
+						<button class="search_btn" type="submit">SEARCH</button>
+					</form>
+				</div>
+
+				<div class="category">
+					<h4>All Category</h4>
+					<div class="sort">
+						<span class="sort_sp">Sort</span>
+						<i class="fa-solid fa-arrow-up-arrow-down"></i>
+					</div>
+				</div>
+
+				<div class="all_cards"></div>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer_content container-small">
+				<div class="help_n_socials">
+					<div class="help">
+						<h6>Hele</h6>
+						<ul>
+							<li><a href="#">Help Centre</a></li>
+							<li><a href="#">Privacy Settings</a></li>
+						</ul>
+					</div>
+					<div class="socials">
+						<a href="https://youtube.com" class="yt"
+							><img src="assets/img/socials/yt.svg" alt=""
+						/></a>
+						<a href="https://instagram.com" class="ig"
+							><img src="assets/img/socials/ig.svg" alt=""
+						/></a>
+						<a href="https://facebook.com" class="fb"
+							><img src="assets/img/socials/fb.svg" alt=""
+						/></a>
+					</div>
+				</div>
+				<a href="index.html" class="logo">
+					<img src="assets/img/logo.svg" alt="logo" />
+				</a>
+				<div class="contact_info">
+					<ul>
+						<li>
+							<i class="fa-solid fa-phone"></i>
+							<a href="tel:+123 45 67  89">+123 45 67 89</a>
+						</li>
+						<li>
+							<i class="fa-regular fa-envelope"></i>
+							<a href="mailto:example@mail.com"
+								>example@mail.com</a
+							>
+						</li>
+						<li>
+							<i class="fa-sharp fa-solid fa-location-dot"></i>
+							<address>Rustaveli avenue, 30</address>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!-- cookies popup -->
+		<div class="cookies">
+			<div class="cookies_container">
+				<p class="cookies_text">
+					This website uses cookies in order to offer you the most
+					reevant information. Please accept cookies for optional
+					performance.
+				</p>
+				<button id="agree" class="cookies_btn">Yes, I accept</button>
+			</div>
+		</div>
+
+		<!-- scroll to top button -->
+		<button type="button" class="stt" id="scroll_to_top">
+			<i class="fa-solid fa-arrow-up-long"></i>
+		</button>
+
+		<!-- scripts -->
+		<script type="module" src="index.js"></script>
+		<script type="module" src="artwork.js"></script>
+	</body>
+</html>

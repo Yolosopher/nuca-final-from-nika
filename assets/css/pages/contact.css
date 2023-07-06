@@ -1,0 +1,243 @@
+.main_article {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../../img/hero-3.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+.artcle_div {
+	max-width: 500px;
+	width: calc(100% - 40px);
+	margin-left: 20px;
+	min-height: 300px;
+	background: rgba(64, 33, 1, 0.73);
+	border: 1px solid #ffffff;
+	box-shadow: -1px -1px 4px #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+}
+form {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 36px 60px;
+}
+h2 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 48px;
+}
+.form-control {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: stretch;
+	position: relative;
+}
+.form-control-message {
+	position: absolute;
+	top: calc(100% + 4px);
+	right: 0;
+	font-size: 11px;
+	line-height: auto;
+	color: var(--brown-light);
+	display: none;
+}
+.form-control.error {
+	color: var(--brown-light);
+}
+.form-control.error input,
+.form-control.error textarea {
+	border-color: var(--brown-light);
+	color: var(--brown-light);
+}
+.form-control.error .form-control-message {
+	display: flex;
+  text-align: right;
+}
+.form-control-password {
+	position: relative;
+}
+.form-control-password i {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-control-radio {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.label-name {
+	font-size: 16px;
+	line-height: 19px;
+	text-align: left;
+	color: #ffffff;
+}
+.radio-label {
+	cursor: pointer;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+.radiobox {
+	aspect-ratio: 1 /1;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background-color: #fff;
+	overflow: hidden;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.form-control-radio input {
+	display: none;
+}
+
+.form-control-radio input:checked + .radiobox {
+	background-color: #d5906e;
+}
+.form-control-radio-inputs {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+input {
+	width: 100%;
+	background: none;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 8px;
+}
+textarea {
+	width: 100%;
+	background: none;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 8px;
+	height: 96px;
+}
+.form-control-textarea {
+	grid-column: 1 / -1;
+}
+
+.agree-terms {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+	cursor: pointer;
+	user-select: none;
+}
+.custom-checkbox {
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.custom-checkbox i {
+	font-size: 12px;
+	font: 900;
+}
+
+.agree-terms input {
+	display: none;
+}
+.agree-terms input:checked + .custom-checkbox {
+	color: #d5906e;
+}
+.contact_main button {
+	background: #d5906e;
+	border-radius: 10px;
+	padding: 19px 42px;
+}
+
+/* contact */
+
+.contact_div {
+	background-color: rgba(213, 144, 110, 0.302);
+	width: 366px;
+	height: 615px;
+	position: relative;
+	margin: 64px auto;
+}
+h3 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+	color: #402101;
+	margin-bottom: 24px;
+}
+h6 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: left;
+	color: #b53b1b;
+	margin-bottom: 7px;
+}
+.contact_main a {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+	text-align: left;
+	color: #623932;
+	margin-bottom: 32px;
+}
+
+iframe {
+	position: absolute;
+	width: 366px;
+	height: 320px;
+	left: 0px;
+	top: 232px;
+}
+
+@media screen and (min-width: 1025px) {
+	.contact_div {
+		width: 1190px;
+		height: 408px;
+		margin: 160px auto;
+	}
+	h3 {
+		margin-bottom: 40px;
+	}
+
+	iframe {
+		width: 815px;
+		height: 320px;
+		left: 375px;
+		top: 88px;
+	}
+	.artcle_div {
+		margin-left: 240px;
+	}
+	form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.agree-terms .form-control-message {
+		display: none !important;
+	}
+}

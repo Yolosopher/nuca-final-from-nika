@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Earthly Artisry</title>
+		<script
+			src="https://kit.fontawesome.com/eeeffffef7.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/pages/contact.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="header_content container-large">
+				<nav>
+					<button type="button" class="burger">
+						<i class="fa-solid fa-bars ok"></i>
+						<i class="fa-sharp fa-solid fa-xmark x"></i>
+					</button>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="artwork.html">Artwork</a></li>
+						<li>
+							<a href="contact.html" class="active">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="logo" href="index.html">
+					<picture>
+						<source
+							media="(min-width:1025px)"
+							srcset="assets/img/logo.svg" />
+						<img src="assets/img/logo-mob.svg" alt="logo" />
+					</picture>
+				</a>
+				<div class="links">
+					<a href="login.html">Sign In</a>
+					<a href="basket.html">
+						<i class="fa-sharp fa-solid fa-cart-shopping"></i>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="main contact_main">
+			<article class="main_article">
+				<div class="artcle_div">
+					<h2>Get in Touch</h2>
+					<form id="contact-form">
+						<div class="form-control">
+							<div class="form-control-message"></div>
+							<input
+								type="text"
+								id="fullname"
+								name="fullname"
+								placeholder="Full Name" />
+						</div>
+						<div class="form-control">
+							<div class="form-control-message"></div>
+							<input
+								type="text"
+								id="email"
+								name="email"
+								placeholder="Email" />
+						</div>
+						<div class="form-control form-control-password">
+							<div class="form-control-message"></div>
+							<input
+								type="password"
+								id="password"
+								name="password"
+								placeholder="Password" />
+							<i
+								class="fa-regular fa-eye"
+								id="password-show-btn"></i>
+						</div>
+						<div class="form-control form-control-radio">
+							<div class="label-name">Your Age:</div>
+							<div class="form-control-radio-inputs">
+								<label class="radio-label">
+									<input
+										checked
+										type="radio"
+										name="age"
+										value="<18"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>&lt;18</span>
+								</label>
+								<label class="radio-label">
+									<input
+										type="radio"
+										name="age"
+										value="19-30"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>19-30</span>
+								</label>
+								<label class="radio-label">
+									<input
+										type="radio"
+										name="age"
+										value=">31"
+										class="age-input" />
+									<div class="radiobox"></div>
+									<span>&gt;31</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-control form-control-textarea">
+							<div class="form-control-message"></div>
+							<textarea
+								name="message"
+								id="sms"
+								placeholder="Message"></textarea>
+						</div>
+						<label class="agree-terms form-control">
+							<div class="form-control-message"></div>
+							<input type="checkbox" name="terms" checked="" />
+							<div class="custom-checkbox">
+								<i class="fa-solid fa-check"></i>
+							</div>
+							<span>I agree to the terms and conditions</span>
+						</label>
+						<button type="submit">SUBMIT</button>
+					</form>
+				</div>
+			</article>
+		</main>
+
+		<section class="contact">
+			<div class="contact_div">
+				<h3>Contact</h3>
+
+				<div class="addresses">
+					<h6>Call Us</h6>
+					<a href="tel:+123 45 67  89">+123 45 67 89</a>
+					<h6>Email Us</h6>
+					<a href="mailto:support@simplelearn.com"
+						>example@mail.com</a
+					>
+					<h6>Address</h6>
+					<a
+						href="https://www.google.com/maps?client=safari&rls=en&q=ოპერისა+და+ბალეტის+თეატრი&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjwsoeMy4f-AhVjSvEDHWQNBbYQ_AUoAnoECAEQBA"
+						>Rustaveli avenue, 30</a
+					>
+				</div>
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.911597215905!2d44.79371501543564!3d41.70084407923668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cdda1d2d4d7%3A0xe30fd49502a2dd79!2sOpera%20and%20Ballet%20Theater%20of%20Tbilisi!5e0!3m2!1sen!2sge!4v1680314509663!5m2!1sen!2sge"
+					width="600"
+					height="450"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer_content container-small">
+				<div class="help_n_socials">
+					<div class="help">
+						<h6>Hele</h6>
+						<ul>
+							<li><a href="#">Help Centre</a></li>
+							<li><a href="#">Privacy Settings</a></li>
+						</ul>
+					</div>
+					<div class="socials">
+						<a href="https://youtube.com" class="yt"
+							><img src="assets/img/socials/yt.svg" alt=""
+						/></a>
+						<a href="https://instagram.com" class="ig"
+							><img src="assets/img/socials/ig.svg" alt=""
+						/></a>
+						<a href="https://facebook.com" class="fb"
+							><img src="assets/img/socials/fb.svg" alt=""
+						/></a>
+					</div>
+				</div>
+				<a href="index.html" class="logo">
+					<img src="assets/img/logo.svg" alt="logo" />
+				</a>
+				<div class="contact_info">
+					<ul>
+						<li>
+							<i class="fa-solid fa-phone"></i>
+							<a href="tel:+123 45 67  89">+123 45 67 89</a>
+						</li>
+						<li>
+							<i class="fa-regular fa-envelope"></i>
+							<a href="mailto:example@mail.com"
+								>example@mail.com</a
+							>
+						</li>
+						<li>
+							<i class="fa-sharp fa-solid fa-location-dot"></i>
+							<address>Rustaveli avenue, 30</address>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- cookies popup -->
+		<div class="cookies">
+			<div class="cookies_container">
+				<p class="cookies_text">
+					This website uses cookies in order to offer you the most
+					reevant information. Please accept cookies for optional
+					performance.
+				</p>
+				<button id="agree" class="cookies_btn">Yes, I accept</button>
+			</div>
+		</div>
+
+		<!-- scroll to top button -->
+		<div class="stt" id="scroll_to_top">
+			<i class="fa-solid fa-arrow-up-long"></i>
+		</div>
+
+		<!-- scripts -->
+		<script type="module" src="index.js"></script>
+		<script type="module" src="contact.js"></script>
+	</body>
+</html>
